@@ -1,0 +1,124 @@
+body{
+    margin:0px;
+    padding: 0px;
+
+}
+
+header{
+color: aliceblue;
+    height: 50px;
+background-color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+}
+svg{
+    fill: white;
+    
+    
+}
+
+.Dashboard{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    font:  sans-serif;
+    margin-left: 10px;
+}
+.search{
+    display: flex;
+    gap: 5px;
+  align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    
+}
+.search-input{
+    background-color: none;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+padding-top: 2px;
+padding-right: 60px;
+display: flex;
+padding-left: 3px;
+align-items: center;
+}
+
+.search input{
+    background-color: black;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.search-svg{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3px 3px;
+    cursor: pointer;
+    
+}
+.copilot{
+    display: flex;
+}
+
+.profile-img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+
+.search-svg:hover{
+    background-color: rgb(44, 43, 43);
+}
+
+abbr[title] {
+    text-decoration: underline dotted; /* Adds a dotted underline to indicate a tooltip */
+    cursor: help; /* Changes the cursor to a help icon */
+    color: blue; /* Optional: Change text color */
+}
+
+abbr[title]:hover {
+    color: red; /* Optional: Change color on hover */
+}
+
+
+
+
+    @media screen and (max-width: 1012px) {
+        .search-input input {
+            display: none; 
+        }
+        
+    
+        .search-input .search-icon {
+            display: inline-block; 
+        }
+        .search-input {
+            width: 1px;
+            padding: 4px;
+            padding-left: 5px;
+            padding-right: 20px;
+        }
+    }
+
+    @media  screen and (max-width:767px) {
+        .copilot{
+            display:none ;
+        }
+        #create-new, #issue ,#pull-request, #create-new{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:255px) {
+
+        .board{
+            display: none;
+        }
+    }
